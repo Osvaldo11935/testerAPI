@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="_responseConsumer.min.js"></script>
+</head>
+<body>
+    <div id="head">
+        <input type="text" name="url" id="url"placeholder="http://localhost/pessoa">
+        <select name="method" onchange="creatElementSelect(this.value)" id="method">
+            <option value="">Seleciona o metodo</option>
+            <option value="POST">POST</option>
+            <option value="GET">GET</option>
+            <option value="PUT">PUT</option>
+            <option value="DELETE">DELETE</option>
+        </select>
+        <div id="headitem1"></div>
+        <input type="submit" value="Enviar" name="Enviar" onclick="get()">
+    </div>
+    <div id="body"></div>
+    <select name="formResponse1" onchange="creatElementFormResponse(this.value)" id="formResponse1">
+        <option value="">Seleciona o opção</option>
+        <option value="JSON">JSON</option>
+        <option value="TABLE">TABLE</option>
+    </select>
+    <div id="bodyFormResponse"></div>
+</body>
+</html>
